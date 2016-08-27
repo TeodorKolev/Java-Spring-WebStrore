@@ -1,0 +1,35 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+        http://www.springframework.org/schema/security
+        http://www.springframework.org/schema/security/spring-security-4.0.xsd">
+
+    <security:http auto-config="true" use-expressions="true">
+        <security:form-login login-page="/login" default-target-url="/orders" always-use-default-target="true"/>
+        <security:csrf disabled="true"/>
+        <security:intercept-url pattern="/resources/css/**" access="permitAll"/>
+        <security:intercept-url pattern="/login" access="permitAll"/>
+        <security:intercept-url pattern="/**" access="isAuthenticated()" />
+        <security:logout logout-success-url="/login"
+                         invalidate-session="true"
+                         delete-cookies="JSESSIONID"/>
+        <security:session-management
+                invalid-session-url="/login"></security:session-management>
+    </security:http>
+
+    <bean id="userDetailsService" class="com.webstore.security.UserDetailsServiceImpl" ></bean>
+
+    <security:authentication-manager>
+        <security:authentication-provider
+                user-service-ref="userDetailsService">
+            <security:password-encoder  hash="md5"/>
+        </security:authentication-provider>
+    </security:authentication-manager>
+
+
+    <security:global-method-security secured-annotations="enabled" pre-post-annotations="enabled" />
+
+</beans>
