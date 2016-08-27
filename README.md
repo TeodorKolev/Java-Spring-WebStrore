@@ -22,11 +22,12 @@ Run with Tomacat Server.
 
 
 ## Restrictions and Flow
-### User can: 
-Read, search, create and edit only his/her orders.
-Read, search, create and deactivate all customers.
-Read and search ALL products.
-Cannot see or get any action on other users.
-User must login with given of admin credentials. 
-Every User (user, admin) can edit his/her own credentials. 
-After successful login User is redirected to orders page.
+#### User can: 
+⋅⋅⋅Read, search, create and edit only his/her orders.
+⋅⋅⋅Read, search, create and deactivate all customers.
+⋅⋅⋅Read and search ALL products.
+⋅⋅⋅User cannot see or get any action on other users.
+⋅⋅⋅User must login with given of admin credentials. 
+⋅⋅⋅After successful login User is redirected to orders page.
+⋅⋅⋅Every User (user, admin) can edit his/her own credentials. 
+
