@@ -18,7 +18,8 @@ Export SQL from ```/help/export.sql``` to your Oracle Database.
 Run with Tomacat Server.
 
 ## ER Diagram
-![alt tag](https://github.com/TeodorKolev/Java-Spring-WebStrore/blob/master/help/ER-Diagram.PNG)
+![alt tag](/help/ER-Diagram.PNG)
+Format: ![Alt Text](url)
 
 
 # Restrictions and Flow
