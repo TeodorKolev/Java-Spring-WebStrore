@@ -19,10 +19,10 @@ Run with Tomacat Server.
 
 ## ER Diagram
 ![alt tag](/help/ER-Diagram.PNG)
-Format: ![Alt Text](url)
 
 
-# Restrictions and Flow
+## Restrictions and Flow
+### User can: 
 Read, search, create and edit only his/her orders.
 Read, search, create and deactivate all customers.
 Read and search ALL products.
