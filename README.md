@@ -4,7 +4,7 @@ Working Web Store example build with:
 - Hibernate
 - Oracle Database
 - Maven
-- Spring Sequrity
+- Spring Security
 
 ## Install
 ```
@@ -18,7 +18,8 @@ Export SQL from ```/help/export.sql``` to your Oracle Database.
 Run with Tomacat Server.
 
 ## ER Diagram
-![alt tag](https://raw.githubusercontent.com/TeodorKolev/Java-Spring-WebStrore/help/ER-Diagram.png)
+![alt tag](https://github.com/TeodorKolev/Java-Spring-WebStrore/blob/master/help/ER-Diagram.PNG)
+
 
 # Restrictions and Flow
 Read, search, create and edit only his/her orders.
